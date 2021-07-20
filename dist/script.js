@@ -355,7 +355,6 @@ Object(_lib_lib__WEBPACK_IMPORTED_MODULE_0__["default"])('button').on('click', f
 });
 Object(_lib_lib__WEBPACK_IMPORTED_MODULE_0__["default"])('div').setAttr('isPrivate', 'true');
 Object(_lib_lib__WEBPACK_IMPORTED_MODULE_0__["default"])('div').toggleAttr('disabled');
-Object(_lib_lib__WEBPACK_IMPORTED_MODULE_0__["default"])('div').toggleAttr('disabled');
 
 /***/ })
 

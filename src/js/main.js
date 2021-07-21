@@ -8,3 +8,4 @@ $('button').on('click', function() {
 $('div').setAttr('isPrivate', 'true');
 
 $('div').toggleAttr('disabled');
+$('div').toggleAttr('disabled');

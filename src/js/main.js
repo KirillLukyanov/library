@@ -1,11 +1,15 @@
 import $ from './lib/lib';
 
 $('button').on('click', function() {
-    $(this).toggleClass('active');
+    $('div').eq('1').toggleClass('active');
 });
 
+$('div').click(function() {
+    console.log($(this).index());
+});
 
-$('div').setAttr('isPrivate', 'true');
+// console.log($('div').eq(2).find('.some').addClass('me'));
 
-$('div').toggleAttr('disabled');
-$('div').toggleAttr('disabled');
+// console.log($('.more').closest('.findmeq').addClass('adasdasd'));
+
+console.log($('.findme').siblings());

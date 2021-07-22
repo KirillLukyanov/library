@@ -12,4 +12,6 @@ $('div').click(function() {
 
 // console.log($('.more').closest('.findmeq').addClass('adasdasd'));
 
-console.log($('.findme').siblings());
+// console.log($('.findme').siblings());
+
+$('body').fadeIn(1000);

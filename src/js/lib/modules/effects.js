@@ -54,3 +54,81 @@ $.prototype.fadeOut = function(dur, fin) {
     }
     return this;
 };
+
+$.prototype.fadeToggle = function(dur, display, fin) {
+    for (let i = 0; i < this.length; i++) {
+        if (window.getComputedStyle(this[i]).display === 'none') {
+            $(this[i]).fadeIn(dur, display, fin);
+        } else {
+            $(this[i]).fadeOut(dur, fin);
+        }
+    }
+    return this;
+};
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// $.prototype._fadeInBase = function(dur, display, fin, i) {
+//     this[i].style.display = display || 'block';
+
+//     const _fadeIn = (complection) => {
+//         this[i].style.opacity = complection;
+//     };
+
+//     const ani = this.animateOverTime(dur, _fadeIn, fin);
+//     requestAnimationFrame(ani);
+// };
+
+
+
+// $.prototype._fadeOutBase = function(dur, fin, i) {
+//     const _fadeOut = (complection) => {
+//         this[i].style.opacity = 1 - complection;
+//         if (complection === 1) {
+//             this[i].style.display = 'none';
+//         }
+//     };
+
+//     const ani = this.animateOverTime(dur, _fadeOut, fin);
+//     requestAnimationFrame(ani);
+// };
+
+
+
+// $.prototype.fadeIn = function(dur, display, fin) {
+//     for (let i = 0; i < this.length; i++) {
+//         this._fadeInBase(dur, display, fin, i);
+//     }
+//     return this;
+// };
+
+// $.prototype.fadeOut = function(dur, fin) {
+//     for (let i = 0; i < this.length; i++) {
+//         this._fadeOutBase(dur, fin, i);
+//     }
+//     return this;
+// };
+
+// $.prototype.fadeToggle = function(dur, display, fin) {
+//     for (let i = 0; i < this.length; i++) {
+//         if (window.getComputedStyle(this[i]).display === 'none') {
+//             this._fadeInBase(dur, display, fin, i);
+//         } else {
+//             this._fadeOutBase(dur, fin, i);
+//         }
+//     }
+//     return this;
+// };
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+

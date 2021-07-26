@@ -39,3 +39,11 @@ $('#trigger').click(() => $('#trigger').createModal({
         ]
     }
 }));
+
+// const dataObj = {
+//     name: 'Kirill',
+//     job: frontend
+// };
+
+// $().post('https://jsonplaceholder.typicode.com/posts', dataObj, 'json')
+//     .then(response => console.log(response));
